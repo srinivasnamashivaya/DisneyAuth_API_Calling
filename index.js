@@ -54,7 +54,8 @@ app.intent('Do Sign In Confirmation', (conv, params, signin) => {
            // Prompt them why we want the information
            context: 'To address you by name'
          };
-  conv.ask(new Permission(options));
+  conv.ask(`Congratulations your account is linked now!`);
+  //conv.ask(new Permission(options));
   //const payload = conv.user.profile.payload;
   //const name = payload ? ${payload.given_name} : '';
   //conv.ask(Hi${name}!);
